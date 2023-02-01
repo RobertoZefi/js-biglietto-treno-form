@@ -6,31 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
-    <div class="container calcolate">
-        <div class="row">
-            <div class="col-5">
-                <h3>Km da percorrere</h3>
+    <h1 class="text-center mt-5 text-white fw-bold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+    <div class="container calcolate mt-5">
+
+        <div class="row justify-content-center">
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h4>Nome e Cognome</h4>
+                <input type="text" class="form-control name" name="" value="">
+            </div>
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h4>Km da percorrere</h4>
                 <input type="text" class="form-control decided-km" name="km" value="">
             </div>
-            <div class="col-5">
-                <h3>Fascia di età</h3>
+            <div class="col-3 d-flex flex-column align-items-center">
+                <h4>Fascia di età</h4>
                 <select name="age" class="form-control select-age" id="">
                     <option value="1">Minorenne</option>
                     <option value="2">Dai 18 ai 64 anni</option>
                     <option value="3">Over 65 </option>
                 </select>
             </div>
-            <input type="button" class="btn btn-secondary generator" value="genera">
+            <div class="col-12 d-flex justify-content-center gap-3 mt-5">
+                <input type="button" class="btn btn-secondary generator fs-4" value="Genera">
+                <input type="button" class="btn btn-secondary fs-4" value="Annulla">
+            </div>
+            
         </div>
     </div>
 
-    <div class="container biglietto">
-        <div class="row">
-            <div class="col-10">
-                <h3 class="biglietto title">Prezzo biglietto: </h3>
+    <h1 class="text-center mt-5 text-white fw-bold">IL TUO BIGLIETTO</h1>
+
+    <div class="container container-biglietto">
+        <h4>DETTAGLIO PASSEGGERI</h2>
+        <div class="row row-biglietto">
+
+            <div class="col nome-passeggero">
+                <h4>NOME PASSEGGERO</h2>
+            </div>
+
+            <div class="col">
+                <p>Offerta</p>
+            </div>
+
+            <div class="col">
+                <p>Carrozza</p>
+            </div>
+
+            <div class="col">
+                Codice CP
+            </div>
+
+            <div class="col">
+                Costo biglietto
             </div>
         </div>
     </div>

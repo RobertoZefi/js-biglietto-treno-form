@@ -1,0 +1,29 @@
+body{
+    background-color: violet;
+}
+
+.calcolate{
+    background-color: white;
+    padding: 30px 0;
+    border-radius: 20px;
+    color: violet;
+}
+
+.name, .decided-km, .select-age{
+    border-color: violet !important;
+}
+
+.container-biglietto{
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.nome-passeggero{
+    background-color: gray;
+}
+
+.row-biglietto{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
