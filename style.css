@@ -9,7 +9,7 @@ body{
     color: violet;
 }
 
-.name, .decided-km, .select-age{
+#name, .decided-km, .select-age{
     border-color: violet !important;
 }
 
@@ -26,4 +26,6 @@ body{
 .row-biglietto{
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    height: 150px;
 }
+
