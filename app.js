@@ -47,4 +47,10 @@ btnElement.addEventListener('click', function(){
 
 })
 
+const btnResetElement = document.querySelector('.reset')
+
+btnResetElement.addEventListener('click', function(){
+   console.log('reset')
+   
+})
 
