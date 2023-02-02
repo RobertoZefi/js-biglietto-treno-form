@@ -16,7 +16,7 @@ btnElement.addEventListener('click', function(){
     name.innerHTML=nomePasseggero.value
     
 
-    let priceTicket = parseFloat(selectKmElement.value * priceKm).toFixed(2)
+    let priceTicket = parseFloat(selectKmElement.value * priceKm)
     console.log(selectKmElement.value, priceTicket)
 
     let discountMinorenni = 0.2
@@ -25,20 +25,20 @@ btnElement.addEventListener('click', function(){
 
     switch (rangeAgeElement.value){
         case '1':
-            priceTicketDiscount = parseFloat(priceTicket - priceTicket * discountMinorenni).toFixed(2)
+            priceTicketDiscount = parseFloat(priceTicket - priceTicket * discountMinorenni)
             console.log (priceTicketDiscount)
-            finalPrice.innerHTML = priceTicketDiscount + "€"
+            finalPrice.innerHTML = priceTicketDiscount.toFixed(2) + "€"
             break
 
         case '2':
             console.log (priceTicket)
-            finalPrice.innerHTML = priceTicket + "€"
+            finalPrice.innerHTML = priceTicket.toFixed(2) + "€"
             break
         
         case '3':
-            priceTicketDiscount = parseFloat(priceTicket - priceTicket * discountOver65).toFixed(2)
+            priceTicketDiscount = parseFloat(priceTicket - priceTicket * discountOver65)
             console.log (priceTicketDiscount)
-            finalPrice.innerHTML = priceTicketDiscount + "€"
+            finalPrice.innerHTML = priceTicketDiscount.toFixed(2) + "€"
             break
     }
 
